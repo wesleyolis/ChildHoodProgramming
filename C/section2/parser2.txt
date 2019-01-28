@@ -1,0 +1,8 @@
+class test2 {
+	int x;
+	boolean y;
+	int a, b, c;
+	boolean e, f, g;
+}
+
+

@@ -1,0 +1,1 @@
+gcc error.c scanner.c token.h boolean.h symboltable.c toyJ.c -o scanner

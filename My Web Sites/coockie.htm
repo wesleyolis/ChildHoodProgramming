@@ -1,0 +1,106 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+</head>
+<script language="javascript">
+<!--\
+
+cookiename="swimdynamics_ad1";
+
+alert(document.cookie);
+
+
+
+function ajax_splash_add(ad_urls,element)
+{
+
+	cookies = document.cookie.split("|");
+	for(cookie_i=0;cookie_i<cookies.length;cookie_i++)
+	{
+			
+			if(cookiename==cookies[cookie_i].substring(cookies[cookie_i].indexOf('=')+1,cookies[cookie_i].indexOf(';')))
+			break;
+	}
+	
+	//no get fileds
+	ad_display=new Array();
+	if(cookie_i<cookies.length)
+	{
+		cookie_fields = cookies[cookie_i].split(';');
+		//eleminate displayed adevertisments
+		
+		for(f=0;f<cookie_fields.length;fields++)
+		{
+			cookie_key_val = cookie_fields.split('=');
+			if(cookie_key_value[0].indexOf('ad_url')>=0)
+			{
+				add_exist = false;
+				for(i=0;i<ad_urls.length;i++)
+				{
+					if(ad_urls[i]==cookie_key_value[1])
+					{
+					add_exist=true;				
+					}
+				}
+				if(add_exist==false)
+				{
+				ad_display.push(ad_urls[i]);
+				ad_urls[i] =null;
+				}
+	
+			}
+		}
+	}
+	else
+	{
+		for(i=0;i<ad_urls.length;i++)
+		{
+			ad_display.push(ad_urls[i]);
+			ad_urls[i] = null;
+		}
+		cookie_i--;
+	}
+	alert(ad_display);
+	
+	//now re_write the cookie
+	expire_date = new Date();
+	expire_date.setSeconds(expire_date.getSeconds()+40);
+	
+	updated_cookie ="cookieName"+(cookie_i+1)+"="+cookiename+";";	
+	//updated_cookie +="expires"+(cookie_i+1)+"="+expire_date.toGMTString()+";";
+	
+	//add teh extral add url adn selec a random add
+	rand_add = Math.floor(Math.random()*(ad_display.length-1));
+	updated_cookie +="ad_url"+(cookie_i+1)+"="+ad_display[rand_add]+";";
+	
+	//now add all the other advertisments back to the cookie.
+	for(i=0;i<ad_urls.length;i++)
+	{
+		if(ad_urls[i]!=null)
+		updated_cookie +="ad_url"+(cookie_i+1)+"="+ad_urls[i]+";";
+	}
+	alert(updated_cookie);
+	
+	//reconsturct coockie matrix
+	cookies[cookie_i]=updated_cookie;
+	updated_cookies='';
+	for(cookie_i=0;cookie_i<cookies.length;cookie_i++)
+	{
+	updated_cookies+= cookies[cookie_i]+'|';
+	}
+	alert(updated_cookie);
+	
+	document.cookie = updated_cookie;
+}
+ad_urls1 = new Array(1,2,3);
+ajax_splash_add(ad_urls1,'sdf');
+
+//-->
+</script>
+<body>
+
+</body>
+
+</html>

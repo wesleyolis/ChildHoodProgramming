@@ -1,0 +1,18 @@
+Toyj Readme please Read:
+------------------------
+
+I am aware of the error that one's get expect y.
+
+please this error is not the restult of my progrming, but that of C feof function.
+As C does not detect the end of file charater, in it has a windows eof char in it.
+If there is a windows eof char then the eof function in c returns eof one charater later.
+
+To Solve this problem please make sure all your file's are created with the unix eof charater.
+Please be warned some editors in C althought set to Unix chara still append the windows eof char.
+
+When createring toyJ files, please use Kwrite, make sure it's set to unix eof char.
+*Then 'Save AS' the file imediatly! You may not have typed in the file at all before.
+after you have done that you may type your contents of the file, and just save it again.
+
+**There are to test files kwe.tj and test.tj in the tar file which do not produce this error,
+as proof.

@@ -1,0 +1,5 @@
+class array2
+{
+	int c,b[],f,c;	/*eror duplicate declaration and expect sm_number*/
+	boolean C,b;	/*error duplicate*/
+}

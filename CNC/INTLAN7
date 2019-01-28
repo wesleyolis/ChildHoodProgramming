@@ -1,0 +1,49 @@
+Radie        "                                                  0
+Kant         "                                                  1
+Kompensation "                                                  2
+Ut-Radie     "                                                  3
+Verktyg      "                                                  4
+Djup        Z"                                                  5
+Hastighet   E"                                                  6
+Hastighet   F"                                                  7
+Hastighet   S"                                                  8
+Med klockan S"                                                  9
+"                                                              10
+JN"                                                            11
+Program  Nr:"                                                  12
+Beskrivning "                                                  13
+Storlek    X"                                                  14
+Storlek    Y"                                                  15
+Storlek    Z"                                                  16
+Ver-Lista Nr"                                                  17
+Borr Optimer"                                                  18
+X Symetriskt"                                                  19
+"                                                              20
+FILEN EXISTERAR REDAN                   "                      21
+Skall jag skriva over? [Ja/Nej/Esc]"                           22
+VERKTYGS DIAMETER FATTAS"                                      23
+[AENDRA/IGNORE/ESC]:"                                          24
+AI"                                                            25
+Tryck vilken knapp som helst."                                 26
+Vaenta en sekund."                                             27
+AVBROT I PROGRAMET"                                            28
+KAN INTE HITTA RITNINGEN"                                      29
+OMEJLIGT ATT LAESA DWG"                                        30
+OMOEJLIGT ATT SPARA DWG"                                       31
+RADIEN PASSAR INTE IN"                                         32
+FEL KOMMANDO "                                                 33
+RADIE STORLEK EJ  OK "                                         34
+Vill du verkligen RADERA ?"                                    35
+[Ja/Nej/Esc]"                                                  36
+RADERA FIL"                                                    37
+Bekraefta ?"                                                   38
+DWG OVAN PANEL STORL"                                          39
+VILL DU AVSLUTA PROGRAMET"                                     40
+KAN INTE HITTA PROFILEN"                                       41
+FEL I PARAMETRAR"                                              42
+OMOEJLIGT ATT FLYTTA"                                          43
+OMEJJLIGT ATT REDIGERA"                                        44
+FIL FATTAS"                                                    45
+DU HAR REDAN MAXIMUM ANTAL OBJEKT"                             46
+Exportera till den nuvarande ritningen?"                       47
+Kompens.Venst"                                                 48

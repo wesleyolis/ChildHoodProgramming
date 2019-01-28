@@ -1,0 +1,8 @@
+1 DUKE DESK FROM HERE
+2 0 0 0
+3 1
+4 0
+5 1
+6 0
+%
+.

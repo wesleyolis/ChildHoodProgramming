@@ -1,0 +1,37 @@
+|Sequencer
+clk => state~0.IN1
+reset => state~1.IN1
+IR_Data[1] => i~0.IN2
+IR_Data[1] => i~3.IN2
+IR_Data[1] => i~5.IN2
+IR_Data[1] => i140.DATAA
+IR_Data[1] => i~2.IN2
+IR_Data[1] => i~4.IN2
+IR_Data[1] => i~1.IN2
+IR_Data[2] => i~0.IN1
+IR_Data[2] => i~1.IN1
+IR_Data[2] => i~2.IN1
+IR_Data[2] => i~5.IN1
+IR_Data[2] => i139.DATAA
+IR_Data[2] => i~3.IN1
+IR_Data[2] => i~4.IN1
+IR_Data[3] => i~0.IN0
+IR_Data[3] => i~2.IN0
+IR_Data[3] => i~3.IN0
+IR_Data[3] => i~4.IN0
+IR_Data[3] => i138.DATAA
+IR_Data[3] => i~5.IN0
+IR_Data[3] => i~1.IN0
+PC <= i75.DB_MAX_OUTPUT_PORT_TYPE
+IR_EN <= state.ir.DB_MAX_OUTPUT_PORT_TYPE
+ADDR_MUX <= state.movl.DB_MAX_OUTPUT_PORT_TYPE
+ROM <= i86.DB_MAX_OUTPUT_PORT_TYPE
+DATA_MUX <= i96.DB_MAX_OUTPUT_PORT_TYPE
+DATA_OUT <= i102.DB_MAX_OUTPUT_PORT_TYPE
+R0 <= i114.DB_MAX_OUTPUT_PORT_TYPE
+R1 <= i120.DB_MAX_OUTPUT_PORT_TYPE
+IR_D2[0] <= i140.DB_MAX_OUTPUT_PORT_TYPE
+IR_D2[1] <= i139.DB_MAX_OUTPUT_PORT_TYPE
+IR_D2[2] <= i138.DB_MAX_OUTPUT_PORT_TYPE
+
+

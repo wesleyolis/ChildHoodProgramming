@@ -1,0 +1,28 @@
+Studies
+-------
+
+spead of two diffrent processing methods of age filter
+--------------------------------------------------
+before/	non	terminate	non-2	terminate-2
+after
+--------------------------------------------------
+0	7.673	6.251		7.14	6.189
+1	7.95	6.48		7.376	7.0
+2	8.157	6.95		8.376	6.48
+3	9.236	6.95		9.454	6.47
+4	10.282	6.906		10.297	7.15
+--------------------------------------------------
+avg	8.6596	6.7074		8.5286	6.6578
+
+after this study it has been decided to traded off
+a bigger filter package for quicker time processing
+
+as this method the same for clubs,and age it has been
+adapted to them as well, a total of 3 methods
+
+to optermise code once again this peace was take out
+of all three methodsan place into one
+
+recently ran test on a laptop 600mhz 64mb-133mhz
+times were extremly comparible insome cases faster than
+my 1.5ghz  256mb-133mhz on which the above test results were run

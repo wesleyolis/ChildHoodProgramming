@@ -1,0 +1,41 @@
+Hi,
+
+Well isspace didn't work..
+
+So I tryed some diffrent on accept '*' and '.'
+
+file:
+*.*. or *.2.
+*.p.    *.1.
+*9*.    *9*.
+*.*.    *.
+
+	    while (!(feof(infile)))
+	    {
+		
+		
+	 
+		fscanf (infile,"%c", &car);
+		
+		if((car == '.') || (car == '*'))
+		{
+		
+			printf("%c,%d\n",car,col);
+
+			col = col +1;
+		}
+	    }
+
+It still seems to return the last charater twice.
+unless there is a charater at the end file, that is not reconize by the if statment above.
+It will excute..
+
+Thought some other's have no problem we have compared code but can't seem to find out why,
+it does this.??
+
+Welsey oliver
+
+		
+
+
+

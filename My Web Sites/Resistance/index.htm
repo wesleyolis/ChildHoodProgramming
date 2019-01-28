@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Resistor Calculator</title>
+</head>
+<script language="javascript">
+<!--
+res = array();
+for(i=0;i<document.getElementsByName("Resistance").length;i++)
+{
+res[i]=document.getElementsByName("Resistance").item[i];
+}
+alert(res);
+//-->
+</script>
+<body>
+
+<form method="POST" action="../_derived/nortbots.htm" webbot-action="--WEBBOT-SELF--" onSubmit="location.href='../_derived/nortbots.htm';return false;" webbot-onSubmit>
+	<!--webbot bot="SaveResults" U-File="../_private/form_results.csv" S-Format="TEXT/CSV" S-Label-Fields="TRUE" startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" i-checksum="43374" endspan -->
+	<p>&nbsp;</p>
+	<table border="1" width="100%">
+		<tr>
+			<td width="116">List of Resistors<p>
+			<select size="20" name="Resistors" style="width: 100">
+			<option>100</option>
+			<option>1k</option>
+			<option>2k</option>
+			<option>3k</option>
+			<option>10k</option>
+			</select></td>
+			<td valign="top">Required Resistance<p>&nbsp;<input type="text" name="R" size="9">
+			<input type="button" value="Calculate" name="Cal">&nbsp; 
+			<p>Resistor Values: <div id='anwser'>
+				</div></td>
+		</tr>
+	</table>
+	<p>&nbsp;</p>
+</form>
+
+</body>
+
+</html>

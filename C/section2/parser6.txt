@@ -1,0 +1,12 @@
+class test6 {
+	int i;
+	while( i < 100 ) {
+		print(i);
+		i = i + 1;
+	}
+}
+
+
+
+
+

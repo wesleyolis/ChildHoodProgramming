@@ -1,0 +1,38 @@
+|Sequencer
+clk => state~19.IN1
+reset => state~20.IN1
+IR_Data[1] => Equal~0.IN5
+IR_Data[1] => Equal~1.IN5
+IR_Data[1] => Equal~2.IN5
+IR_Data[1] => Equal~3.IN5
+IR_Data[1] => Equal~4.IN5
+IR_Data[1] => Equal~5.IN5
+IR_Data[1] => IR_D2~3.DATAA
+IR_Data[2] => Equal~0.IN4
+IR_Data[2] => Equal~1.IN4
+IR_Data[2] => Equal~2.IN4
+IR_Data[2] => Equal~3.IN4
+IR_Data[2] => Equal~4.IN4
+IR_Data[2] => Equal~5.IN4
+IR_Data[2] => IR_D2~2.DATAA
+IR_Data[3] => Equal~0.IN3
+IR_Data[3] => Equal~1.IN3
+IR_Data[3] => Equal~2.IN3
+IR_Data[3] => Equal~3.IN3
+IR_Data[3] => Equal~4.IN3
+IR_Data[3] => Equal~5.IN3
+IR_Data[3] => IR_D2~1.DATAA
+PC <= state.clock.DB_MAX_OUTPUT_PORT_TYPE
+IR_EN <= state.ir.DB_MAX_OUTPUT_PORT_TYPE
+ADDR_MUX <= state.movl.DB_MAX_OUTPUT_PORT_TYPE
+ROM <= ROM~0.DB_MAX_OUTPUT_PORT_TYPE
+DATA_MUX <= DATA_MUX~1.DB_MAX_OUTPUT_PORT_TYPE
+DATA_OUT <= DATA_OUT~0.DB_MAX_OUTPUT_PORT_TYPE
+R0 <= R0~2.DB_MAX_OUTPUT_PORT_TYPE
+R1 <= R1~0.DB_MAX_OUTPUT_PORT_TYPE
+ADD_SUB <= ADD_SUB~0.DB_MAX_OUTPUT_PORT_TYPE
+IR_D2[0] <= IR_D2~3.DB_MAX_OUTPUT_PORT_TYPE
+IR_D2[1] <= IR_D2~2.DB_MAX_OUTPUT_PORT_TYPE
+IR_D2[2] <= IR_D2~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,5 @@
+class array4
+{
+	int c,b[5],f,c;	/*Error previous dec c,b*/
+	boolean C,b;	
+}

@@ -1,0 +1,35 @@
+Version 4.0 Build 214 3/25/2004 Service Pack 1 SJ Web Edition
+29
+OFF
+OFF
+OFF
+OFF
+OFF
+0
+# entity
+Sequencer
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+Sequencer.vhd
+1217522292
+4
+# storage
+db|Sequencer(0).cnf
+db|Sequencer(0).cnf
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+PRESERVE_REGISTER
+OFF
+DUP_REG_EXTRACTION
+ON
+DUP_LOGIC_EXTRACTION
+ON
+}
+# end
+# complete
+

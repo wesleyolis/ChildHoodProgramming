@@ -1,0 +1,49 @@
+Raccordo"                                                       0
+Spigolo"                                                        1
+Compensazione"                                                  2
+Raccor.Uscita"                                                  3
+Utensile"                                                       4
+Profondita' Z"                                                  5
+Velocita'   E"                                                  6
+Velocita'   F"                                                  7
+Velocita'   S"                                                  8
+Rot.Oraria  S"                                                  9
+"                                                              10
+SN"                                                            11
+Programma N:"                                                  12
+Descrizione"                                                   13
+Dimensione X"                                                  14
+Dimensione Y"                                                  15
+Dimensione Z"                                                  16
+Tab.Utens. N"                                                  17
+Ottimiz.Fori"                                                  18
+Simmetria"                                                     19
+"                                                              20
+FILE PRESENTE"                                                 21
+Continui ? [Si/No/Esc]"                                        22
+ASSENTE UTENSILE DIAMETRO"                                     23
+[ MODIFICA/IGNORA/ESC]:"                                       24
+MI"                                                            25
+Premere un tasto per continuare"                               26
+Attendere..."                                                  27
+PROCEDURA INTERROTTA"                                          28
+DISEGNO NON TROVATO"                                           29
+IMPOSSIBILE LEGGERE IL DISEGNO"                                30
+IMPOSSIBILE SALVARE IL DISEGNO"                                31
+IMPOSSIBILE RACCORDARE"                                        32
+OPERAZIONE IMPOSSIBILE"                                        33
+DIMENSIONE RAGGIO NON CORRETTA"                                34
+Confermi cancellazione ?"                                      35
+[Si/No/Esc]"                                                   36
+CANCELLAZIONE FILE"                                            37
+Confermi ?"                                                    38
+DISEGNO FUORI PANNELLO"                                        39
+TERMINE PROCEDURA"                                             40
+PROFILO NON TROVATO"                                           41
+VALORE PARAMETRI NON VALIDI"                                   42
+SPOSTAMENTO NON POSSIBILE"                                     43
+MODIFICA NON POSSIBILE"                                        44
+FILE NON TROVATO"                                              45
+RAGGIUNTO MAX NUMERO DI ELEMENTI"                              46
+Mantengo il disegno corrente ?"                                47
+Compensaz. SX"                                                 48

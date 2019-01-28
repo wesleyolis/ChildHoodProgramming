@@ -1,0 +1,121 @@
+class test5 {
+	
+	boolean b,c;
+	int B, T;
+	int j,G[2],h,k[5];
+	b = true;
+	G[0] = 10;
+	print(G[0]); 
+	
+	
+	print(!b);
+	print(b);
+	B = 99;
+	print(B);
+	if(b == false)
+	{
+		print(10);
+	}
+	else
+	{
+		print(9);
+	}
+	
+	print(B);
+	print(b);
+	
+	T = 7;
+	if(T <= 8)
+	{
+		if(T == 8 )
+		{	
+			print(2);
+		}
+		else
+		{
+		print(3);
+		}
+	}
+	else
+	{
+		print(4);
+	}
+	
+	/*test arbetary comparissons*/
+	if(true == true)
+	{
+	print(101);
+	}
+	
+	if(true != true)
+	print(102);
+	
+	if(1 < 10)
+	print(103);
+	print(104);
+	
+	if(1<= 10)
+	print(105);
+	
+	if(10 <=10)
+	print(106);
+	
+	if(1>= 10);
+	else
+	print(107);
+	
+	if(10 >=10)
+	print(108);
+	
+	if(!false)
+	{{print(109);}}
+	
+	/*for test*/
+	
+	if(-120 <= -125)
+	print(120);
+	
+	for(T = -125; -120)
+	{
+	print(T);
+	}
+	print(888);
+	T = 130;
+	B = 130;
+	if((T < 140) && (B < 140))
+	{
+		 print(9991);
+		T = 139;
+		if((T < 140) && (B < 140))
+		{
+		 print(9992);
+		}
+		 print(9993);
+		
+		
+	}
+	T = 130;
+	B = 130;
+	
+	while((T < 140) && (B < 140))
+	{
+		
+		print(T);
+		T = T + 1;
+		B = B + 2;
+	}
+	
+	
+	
+	/*int h;
+	
+	
+	b = true;
+	h = 5;
+	print(0);
+	print(5);
+	print(true);
+	print((!false));*/
+
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Processor">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Processor|lpm_counter0:PC|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_mjb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Processor|lpm_mux1:D_MuX|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_afc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Processor|lpm_rom0:Rom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_u6q.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Processor|lpm_mux0:add_mux|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_7fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Processor|lpm_add_sub0:Add_Subtract|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_0ed.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

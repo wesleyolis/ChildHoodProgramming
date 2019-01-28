@@ -1,0 +1,18 @@
+IF IR_D="000" Then
+					state <= MovL1;
+					End If;
+					IF IR_D="001" Then
+					state <= MovR;
+					End If;
+					IF IR_D="010" Then
+					state <= Add;
+					End If;
+					IF IR_D="011" Then
+					state <= Sub;
+					End If;
+					IF IR_D="100" Then
+					state <= Print;
+					End If;
+					IF IR_D="101" Then
+					state <= Halt;
+					End If;

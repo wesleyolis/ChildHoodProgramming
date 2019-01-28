@@ -1,0 +1,5 @@
+class array3
+{
+	int c,b[1],f,c;	/*expect sm_number in array delaration to be larger than 1 and semi_colon*/
+	boolean C,b;	
+}

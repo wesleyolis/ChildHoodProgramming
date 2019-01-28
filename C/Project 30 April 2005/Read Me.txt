@@ -1,0 +1,66 @@
+DFA Creator for 2 Color images
+------------------------------
+
+Developed by: 	Welsey Oliver
+Student of: 	Stellenbosch university
+Std-no:		14544830
+
+Please make sure that the file you are using is creating in linux,
+There must be no xtra chrater added on to the file when u save it,
+from the operarating system, as this will cause DFA to display that
+the image file has Errors.
+
+If not sure go to line number 338 and comment that line out or in to see which works.
+
+
+Kown Limitations
+----------------
+
+The number defined States can't exceed 8
+i.e #define States 8 is the maxium it can be on my P4
+
+
+Invert Colors of the image
+--------------------------
+
+First read in the image like normal, then once it has constructed the dfa,
+Display the image, you sould see your normal image,
+Then goto option 5 change Colors on the menu and switch the colors around.
+Then Display the image Vala there you go.
+
+
+High_verti Varible Explanation in implementation
+------------------------------------------------
+
+This varible was intend to record the highest vertical quad component
+Reading from the right (as in binary numbers) that iwas not 0 i.e had
+to be 1
+
+Reason, Well if you thing that we adding the verti and hori componets to geather,
+The anser will be the same as the hori components from the high_verti place to the left.
+So to save time on would only add the the components up to that point.
+
+Mainly noticible diffrence's on rather large images
+
+Example1: image size 8X8, 3 States
+
+	pixel in Row 0, Colom 5
+
+	Colom - Hori Component:	101 
+	Row - Verti Component:	000
+
+	In this case High_verti = 3 not do any adding case  Sates > High_Verti, 3 > 3 
+	This case answer	101
+
+Example2: image size 8X8, 3 States
+
+	pixel in Row 2, Colom 5
+
+	Colom - Hori Component:	101 
+	Row - Verti Component:	011
+
+	In this case High_verti = 1 not do any adding case  Sates > High_Verti, 3 > 1
+	and it would have add twice the other just used the hori 
+	This case answer	113
+
+

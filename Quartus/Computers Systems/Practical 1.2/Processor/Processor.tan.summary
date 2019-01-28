@@ -1,0 +1,41 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.776 ns
+From           : reset
+To             : Sequencer:inst|IR_D2[1]~reg0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.614 ns
+From           : lpm_counter0:PC|lpm_counter:lpm_counter_component|alt_counter_stratix:wysi_counter|safe_q[1]
+To             : rom1
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.553 ns
+From           : reset
+To             : Sequencer:inst|PC~reg0
+
+Type           : Worst-case minimum tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.038 ns
+From           : Sequencer:inst|PC~reg0
+To             : pc_en
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 145.01 MHz ( period = 6.896 ns )
+From           : Sequencer:inst|ADD_SUB~reg0
+To             : lpm_ff0:R0|lpm_ff:lpm_ff_component|dffs[7]
+
+--------------------------------------------------------------------------------------
+

@@ -1,0 +1,55 @@
+class test5 {
+	
+	int a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z; boolean A,B,C,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,Z,Y,X;
+
+	for(x = 1;12 +3)
+	{
+		x = x + 1;
+	}
+
+	B = true;
+
+
+	b = b + c + (6+ (e+g));
+
+
+	x = x + c;
+	x = + x + 6;
+
+	if((A == A) || ( (B) && (b==b) ))
+	
+	print(h);
+	print(H);
+	if(!B)
+	print(c + 10 + c == y);
+	
+
+	x = x + 10;
+	
+	
+
+	if (( x == 100 ) || ( x <= y ) && ( 7 > 10 ))
+	if(( x == 10 ) || !( ( x != y ) && !( 20 != 30 ) ))
+	
+	x = 10;
+	x = (10);
+	b = (2);
+	x = +10;
+	x = -10;
+	B = true;
+	B = (true);
+	
+	B = false;
+	B = !true;
+	x = y;
+	x = 100 + (y/1000 + 20*x)/200;
+	if( B && ( ( B || true) && (B && false)) || true)
+
+	if ((a >= b) && (a >= c))
+                print( a );
+        else if ((b >= a) && (b >= c))
+                print( b );
+        else print( c );
+
+
+}

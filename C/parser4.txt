@@ -1,0 +1,10 @@
+class test4 {
+	int x;
+	print(x);
+	print(2*x + 1);
+	print(100);
+	print(true);
+}
+
+
+

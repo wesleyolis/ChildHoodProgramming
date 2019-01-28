@@ -1,0 +1,49 @@
+Radio  enlace"                                                  0
+Esquina      "                                                  1
+Compensacion "                                                  2
+Radio de sal."                                                  3
+Herramienta  "                                                  4
+Profondidad Z"                                                  5
+Velocidad   E"                                                  6
+Velocidad   F"                                                  7
+Velocidad   S"                                                  8
+Rot.Horaria S"                                                  9
+"                                                              10
+SN"                                                            11
+Programa  N:"                                                  12
+Descripcion "                                                  13
+Dimension  X"                                                  14
+Dimension  Y"                                                  15
+Dimension  Z"                                                  16
+T.Herram. N:"                                                  17
+Opt. Talad. "                                                  18
+Simetria    "                                                  19
+"                                                              20
+ARCHIVO PRESENTE                    "                          21
+Continua ? [Si/No/Esc]"                                        22
+DIAM. ERRAMIENTA AUSENTE"                                      23
+[ MODIFICA/IGNORA/ESC]:"                                       24
+MI"                                                            25
+Pulse una tella para cont."                                    26
+Espere...."                                                    27
+PROCEDIMIENTO INTERRUMPIDO"                                    28
+DISENO NO ENCONTRADO"                                          29
+IMPOSIBLE LEER EL DISENO"                                      30
+IMPOSIBLE SALVAR EL DISENO"                                    31
+IMPOSIBLE ENLAZAR"                                             32
+OPERACION IMPOSIBLE"                                           33
+DIMENSION DEL RADIO INCORRECTA"                                34
+Confirma cancelacion ?"                                        35
+[Si/No/Esc]"                                                   36
+CANCELAR ARCHIVO"                                              37
+Confirma ?"                                                    38
+DISENO FUERA PANEL"                                            39
+FIN DEL PROCEDIMIENTO"                                         40
+PERFIL NO ENCONTRADO"                                          41
+VALOR PARAMETROS NO VALIDOS"                                   42
+DESPLAZAMIENTO NO POSIBLE"                                     43
+MODIFICACION NO POSIBLE"                                       44
+ARCHIVO NO ENCONTRADO"                                         45
+REACHED MAX NO. OF OBJECTS"                                    46
+Keep the present drawing ?"                                    47
+Compensac.SX"                                                  48

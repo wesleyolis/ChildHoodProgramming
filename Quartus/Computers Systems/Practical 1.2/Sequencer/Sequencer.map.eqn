@@ -1,0 +1,279 @@
+--A1L92Q is PC~reg0
+--operation mode is normal
+
+A1L92Q_lut_out = A1L73Q & !A1L93Q & !A1L83Q & !A1L54Q;
+A1L92Q = DFFEA(A1L92Q_lut_out, !clk, VCC, , !reset, , );
+
+
+--A1L32Q is IR_EN~reg0
+--operation mode is normal
+
+A1L32Q_lut_out = A1L83Q;
+A1L32Q = DFFEA(A1L32Q_lut_out, !clk, VCC, , !reset, , );
+
+
+--A1L4Q is ADDR_MUX~reg0
+--operation mode is normal
+
+A1L4Q_lut_out = A1L93Q;
+A1L4Q = DFFEA(A1L4Q_lut_out, !clk, VCC, , !reset, , );
+
+
+--A1L63Q is ROM~reg0
+--operation mode is normal
+
+A1L63Q_lut_out = A1L93Q # !A1L73Q;
+A1L63Q = DFFEA(A1L63Q_lut_out, !clk, VCC, , !reset, , );
+
+
+--A1L7Q is DATA_MUX~reg0
+--operation mode is normal
+
+A1L7Q_lut_out = A1L24Q # A1L34Q;
+A1L7Q = DFFEA(A1L7Q_lut_out, !clk, VCC, , !reset, , );
+
+
+--A1L9Q is DATA_OUT~reg0
+--operation mode is normal
+
+A1L9Q_lut_out = A1L44Q;
+A1L9Q = DFFEA(A1L9Q_lut_out, !clk, VCC, , !reset, , );
+
+
+--A1L13Q is R0~reg0
+--operation mode is normal
+
+A1L13Q_lut_out = !A1L62;
+A1L13Q = DFFEA(A1L13Q_lut_out, !clk, VCC, , !reset, , );
+
+
+--A1L33Q is R1~reg0
+--operation mode is normal
+
+A1L33Q_lut_out = A1L14Q;
+A1L33Q = DFFEA(A1L33Q_lut_out, !clk, VCC, , !reset, , );
+
+
+--A1L2Q is ADD_SUB~reg0
+--operation mode is normal
+
+A1L2Q_lut_out = A1L24Q # A1L2Q & (A1L42 # !A1L52);
+A1L2Q = DFFEA(A1L2Q_lut_out, !clk, VCC, , !reset, , );
+
+
+--A1L71Q is IR_D2[2]~reg0
+--operation mode is normal
+
+A1L71Q_lut_out = IR_Data[3];
+A1L71Q = DFFEA(A1L71Q_lut_out, !clk, VCC, , A1L61, , );
+
+
+--A1L41Q is IR_D2[1]~reg0
+--operation mode is normal
+
+A1L41Q_lut_out = IR_Data[2];
+A1L41Q = DFFEA(A1L41Q_lut_out, !clk, VCC, , A1L61, , );
+
+
+--A1L21Q is IR_D2[0]~reg0
+--operation mode is normal
+
+A1L21Q_lut_out = IR_Data[1];
+A1L21Q = DFFEA(A1L21Q_lut_out, !clk, VCC, , A1L61, , );
+
+
+--A1L83Q is state~21
+--operation mode is normal
+
+A1L83Q_lut_out = A1L83Q & IR_Data[2] & IR_Data[3] # !A1L73Q;
+A1L83Q = DFFEA(A1L83Q_lut_out, !clk, !reset, , , , );
+
+
+--A1L54Q is state~28
+--operation mode is normal
+
+A1L54Q_lut_out = A1L54Q # A1L72 & IR_Data[1] & IR_Data[3];
+A1L54Q = DFFEA(A1L54Q_lut_out, !clk, !reset, , , , );
+
+
+--A1L73Q is state~20
+--operation mode is normal
+
+A1L73Q_lut_out = !A1L44Q & !A1L14Q & A1L62;
+A1L73Q = DFFEA(A1L73Q_lut_out, !clk, !reset, , , , );
+
+
+--A1L93Q is state~22
+--operation mode is normal
+
+A1L93Q_lut_out = A1L72 & !A1L93Q & !IR_Data[1] & !IR_Data[3];
+A1L93Q = DFFEA(A1L93Q_lut_out, !clk, !reset, , , , );
+
+
+--A1L24Q is state~25
+--operation mode is normal
+
+A1L24Q_lut_out = A1L83Q & IR_Data[2] & !IR_Data[1] & !IR_Data[3];
+A1L24Q = DFFEA(A1L24Q_lut_out, !clk, !reset, , , , );
+
+
+--A1L34Q is state~26
+--operation mode is normal
+
+A1L34Q_lut_out = A1L83Q & IR_Data[1] & IR_Data[2] & !IR_Data[3];
+A1L34Q = DFFEA(A1L34Q_lut_out, !clk, !reset, , , , );
+
+
+--A1L44Q is state~27
+--operation mode is normal
+
+A1L44Q_lut_out = A1L83Q & !IR_Data[2] & IR_Data[3] & !IR_Data[1];
+A1L44Q = DFFEA(A1L44Q_lut_out, !clk, !reset, , , , );
+
+
+--A1L04Q is state~23
+--operation mode is normal
+
+A1L04Q_lut_out = A1L93Q;
+A1L04Q = DFFEA(A1L04Q_lut_out, !clk, !reset, , , , );
+
+
+--A1L14Q is state~24
+--operation mode is normal
+
+A1L14Q_lut_out = A1L83Q & !IR_Data[2] & IR_Data[1] & !IR_Data[3];
+A1L14Q = DFFEA(A1L14Q_lut_out, !clk, !reset, , , , );
+
+
+--A1L42 is i~237
+--operation mode is normal
+
+A1L42 = A1L04Q # A1L54Q # A1L14Q;
+
+
+--A1L52 is i~243
+--operation mode is normal
+
+A1L52 = !A1L93Q & !A1L44Q & !A1L83Q & A1L73Q;
+
+
+--A1L61 is IR_D2[2]~3
+--operation mode is normal
+
+A1L61 = A1L83Q & !reset;
+
+
+--A1L72 is i~259
+--operation mode is normal
+
+A1L72 = A1L83Q & !IR_Data[2];
+
+
+--A1L62 is i~253
+--operation mode is normal
+
+A1L62 = !A1L24Q & !A1L34Q & !A1L04Q;
+
+
+--clk is clk
+--operation mode is input
+
+clk = INPUT();
+
+
+--reset is reset
+--operation mode is input
+
+reset = INPUT();
+
+
+--IR_Data[3] is IR_Data[3]
+--operation mode is input
+
+IR_Data[3] = INPUT();
+
+
+--IR_Data[2] is IR_Data[2]
+--operation mode is input
+
+IR_Data[2] = INPUT();
+
+
+--IR_Data[1] is IR_Data[1]
+--operation mode is input
+
+IR_Data[1] = INPUT();
+
+
+--PC is PC
+--operation mode is output
+
+PC = OUTPUT(A1L92Q);
+
+
+--IR_EN is IR_EN
+--operation mode is output
+
+IR_EN = OUTPUT(A1L32Q);
+
+
+--ADDR_MUX is ADDR_MUX
+--operation mode is output
+
+ADDR_MUX = OUTPUT(A1L4Q);
+
+
+--ROM is ROM
+--operation mode is output
+
+ROM = OUTPUT(A1L63Q);
+
+
+--DATA_MUX is DATA_MUX
+--operation mode is output
+
+DATA_MUX = OUTPUT(A1L7Q);
+
+
+--DATA_OUT is DATA_OUT
+--operation mode is output
+
+DATA_OUT = OUTPUT(A1L9Q);
+
+
+--R0 is R0
+--operation mode is output
+
+R0 = OUTPUT(A1L13Q);
+
+
+--R1 is R1
+--operation mode is output
+
+R1 = OUTPUT(A1L33Q);
+
+
+--ADD_SUB is ADD_SUB
+--operation mode is output
+
+ADD_SUB = OUTPUT(A1L2Q);
+
+
+--IR_D2[2] is IR_D2[2]
+--operation mode is output
+
+IR_D2[2] = OUTPUT(A1L71Q);
+
+
+--IR_D2[1] is IR_D2[1]
+--operation mode is output
+
+IR_D2[1] = OUTPUT(A1L41Q);
+
+
+--IR_D2[0] is IR_D2[0]
+--operation mode is output
+
+IR_D2[0] = OUTPUT(A1L21Q);
+
+

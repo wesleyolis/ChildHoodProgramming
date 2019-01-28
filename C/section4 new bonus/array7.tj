@@ -1,0 +1,12 @@
+class array7
+{
+	int c,b[5],f,c;	/*error previous declaretions, in ompatible tpyes, expect semi colon*/
+	boolean C,f;
+	
+	/*all display error's of type array*/
+	
+
+	c = b;
+	c = c[5];
+	c = (c[5]);
+}

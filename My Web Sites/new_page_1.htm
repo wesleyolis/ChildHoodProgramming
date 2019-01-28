@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+</head>
+<script language="javascript">
+<!--
+alert(document.cookie);
+alert(document.cookie.length);
+
+expire_date = new Date();
+		expire_date.setSeconds(expire_date.getSeconds()+10);
+		
+		updated_cookie ="swimdynamics_advertising=key1=value1|key2=value2;";	
+		updated_cookie +="expires1="+(expire_date.toGMTString())+";";
+		//updated_cookie +="key2=value2;";	
+		//updated_cookie +="expires2="+(expire_date.toGMTString())+";";
+
+
+document.cookie = updated_cookie;
+
+//-->
+</script>
+<body>
+
+</body>
+
+</html>

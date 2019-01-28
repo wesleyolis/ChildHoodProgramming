@@ -1,0 +1,20 @@
+class test10 {
+	int x, y;
+	for (i = 1; 100) {
+		print( -i );
+		if (i == 50)
+			print( i );
+	}	
+	
+}
+
+
+
+
+
+
+
+
+
+
+

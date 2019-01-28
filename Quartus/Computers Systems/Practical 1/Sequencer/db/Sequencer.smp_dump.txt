@@ -1,0 +1,9 @@
+
+State Machine - |Sequencer|state
+Name state.halt state.clock state.movl state.ir state.set_mem state.start 
+state.start 0 0 0 0 0 0 
+state.set_mem 0 0 0 0 1 1 
+state.ir 0 0 0 1 0 1 
+state.movl 0 0 1 0 0 1 
+state.clock 0 1 0 0 0 1 
+state.halt 1 0 0 0 0 1 

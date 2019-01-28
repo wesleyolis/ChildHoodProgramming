@@ -1,0 +1,9 @@
+class test3 {
+	x = 1;
+	x = 1 + x;
+	b = true;
+	c = b || ( a && b );
+}
+
+
+

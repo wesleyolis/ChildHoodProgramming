@@ -1,0 +1,49 @@
+Radius       "                                                  0
+Corner       "                                                  1
+Compensation "                                                  2
+Exit Radius  "                                                  3
+Tool         "                                                  4
+Depth       Z"                                                  5
+Speed       E"                                                  6
+Speed       F"                                                  7
+Speed       S"                                                  8
+Clock Whise S"                                                  9
+"                                                              10
+YN"                                                            11
+Program  No:"                                                  12
+Description "                                                  13
+Size       X"                                                  14
+Size       Y"                                                  15
+Size       Z"                                                  16
+Toll List No"                                                  17
+Boring Optim"                                                  18
+X Simmetry  "                                                  19
+"                                                              20
+FILE EXISTING                       "                          21
+Go on ? [Yes/No/Esc]"                                          22
+TOOL DIAMETER MISSING"                                         23
+[MODIFY/IGNORE/ESC]:"                                          24
+MI"                                                            25
+Press any key to continue"                                     26
+Wait..."                                                       27
+PROCEDURE BREAK"                                               28
+DRAWING NOT FOUND"                                             29
+IMPOSSIBLE TO READ DWG"                                        30
+IMPOSSIBLE TO SAVE DWG"                                        31
+RADIUS IMPOSSIBLE"                                             32
+OPERATION IMPOSSIBLE"                                          33
+RADIUS SIZE NOT RIGHT"                                         34
+Erase confirmation ?"                                          35
+[Yes/No/Esc]"                                                  36
+ERASE FILE"                                                    37
+Confirm ?"                                                     38
+DWG ABOVE PANEL SIZE"                                          39
+PROCEDURE END"                                                 40
+PROFILE NOT FOUND"                                             41
+PARAMETERS NOT VALID"                                          42
+DEPLACEMENT IMPOSSIBLE"                                        43
+MODIFICATION IMPOSSIBLE"                                       44
+FILE MISSING"                                                  45
+REACHED MAX NO. OF OBJECTS"                                    46
+Keep the present drawing ?"                                    47
+Compensat. SX"                                                 48

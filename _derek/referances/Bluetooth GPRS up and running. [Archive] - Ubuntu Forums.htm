@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0054)http://ubuntuforums.org/archive/index.php/t-50496.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	
+	<meta name="keywords" content=" Bluetooth GPRS up and running., ubuntu forums,ubuntu linux,ubuntu,linux forum,ubuntu forum,linux ubuntu,ubuntu support,ubuntu help,ubuntu linux help">
+	<meta name="description" content="[Archive]  Bluetooth GPRS up and running. Absolute Beginner Talk">
+	
+	<title> Bluetooth GPRS up and running. [Archive]  - Ubuntu Forums</title>
+	<link rel="stylesheet" type="text/css" href="./Bluetooth GPRS up and running. [Archive] - Ubuntu Forums_files/archive.css">
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="http://ubuntuforums.org/archive/index.php">Ubuntu Forums</a> &gt; <a href="http://ubuntuforums.org/archive/index.php/f-130.html">The Ubuntu Forum Community</a> &gt; <a href="http://ubuntuforums.org/archive/index.php/f-325.html">Forum Archive</a> &gt; <a href="http://ubuntuforums.org/archive/index.php/f-73.html">Absolute Beginner Talk</a> &gt;  Bluetooth GPRS up and running.</div>
+<hr>
+<div class="pda"><a href="http://ubuntuforums.org/archive/index.php/t-50496.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="http://ubuntuforums.org/showthread.php?t=50496">Bluetooth GPRS up and running.</a></p>
+<hr>
+
+<div class="post"><div class="posttop"><div class="username">GrootBrak</div><div class="date">July 20th, 2005, 02:06 PM</div></div><div class="posttext">Just a quick report. After finally working through a whole lot of issues and complaints, I finally got my Bluetooth GPRS up and running. I finally recalled a post that the USB bluetooth dongle should not be in a hub, well, I don'd have a hub, but an extra PCI card add some four extra ports. Although its up and running and files etc work from PC to phone, I was unable to connect to GPRS.<br>
+<br>
+On a whim, I decided, stuff it, and plugged the dongle in one of the system board USB port. And it started up without ANY mods to any file. I use wvdail, but was only connecting for two minutes, and off it goes. So I switch to my GPRS scripts, and I am still going strong!!! (The slapping sound you hear??? Me slapping myself with satisfaction.) \\:D/  \\:D/  \\:D/  \\:D/ <br>
+<br>
+Now my next hurdle. To set up things in such way so that I can just click on internet or mail, and it connects using my script. Dunno that part yet. Same goes for mail. Anyone that can help me, please congratulate me first and then tell me how! O:)<br>
+<br>
+The command I currently use to run my GPRS scripts is:<br>
+pon MTN_GPRS<br>
+The last bit is what I decide on my network usage.<br>
+<br>
+BTW. O yes, I am bragging big time. I write this mail while in UBUNTU, my first time ever online with Linux and my PC. :grin:</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">mabuti</div><div class="date">September 14th, 2005, 10:31 PM</div></div><div class="posttext">HI!<br>
+Its good to hear that u got your GPRS up and running on linux. Can you explain bit by bit how did the setup, because I have been trying to do the same but have failed. I have a bluetooth adaptor and nokia 6260.<br>
+MTN_GPRS, sounds like youare somewhere in Joburg.</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">3david</div><div class="date">October 28th, 2005, 05:16 PM</div></div><div class="posttext">could you post your gprs scripts?</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">GrootBrak</div><div class="date">November 3rd, 2005, 03:46 AM</div></div><div class="posttext">could you post your gprs scripts?<br>
+<br>
+<br>
+Sorry, missed your post. I am at work running winduhs. As soon as I get some "home time" I will post to you. Meanwhile, check that you have the latest bluetooth-utils installed. <br>
+<br>
+This will only work if you have bluetooth sucessfully set up on your PC and paired the phone to PC on rfcomm0 channel 1. Else change as you may need.<br>
+<br>
+<br>
+In folder etc/ppp/peers. Use gedit to save and name it "T630" or whatever you like.<br>
+<br>
+/dev/rfcomm0 1	#Device bound to T630 Phone<br>
+115200		#Speed<br>
+defaultroute	#Use the network for the default root<br>
+usepeerdns	#use the DNS servers from the remote network<br>
+nodetach	#keep PPD in foreground<br>
+crtscts		#hardware flow control<br>
+lock		#lock the serial port<br>
+noauth		#don't expect modem to authenticate itself<br>
+local		#don'r use carrier detect or DTR<br>
+crtscts<br>
+debug<br>
+<br>
+<br>
+# Use the next two lines if you recieve the following messages:<br>
+#	No response to echo-requests<br>
+#	Serill link appears to be disconnected<br>
+#	Connection terminated<br>
+#<br>
+#lcp-echo-failure 4<br>
+#lcp-echo-interval 65535<br>
+<br>
+#Prevent dial line checking as it does'nt work with SE T630<br>
+#causes it to disconnect<br>
+lcp-echo-interval 0<br>
+lcp-echo-failure 0<br>
+<br>
+<br>
+connect 	"/usr/sbin/chat -v -f /etc/chatscripts/MTN_GPRS-connect"<br>
+disconnect 	"/usr/sbin/chat -v -f /etc/chatscripts/MTN_GPRS-disconnect"<br>
+<br>
+As you can see most is edited out. You could need those extra lines for other phones.<br>
+<br>
+Here is what I have in folder etc/chatscripts. First is to connect. Second is to disconnect. Save it with the name you prefer, but remember to same name as the last two lines above. In my case it would be saved as "MTN_GPRS-connect" and "MTN_GPRS-disconnect" respectively.<br>
+<br>
+# File: /etc/chatscripts/MTN_GPRS<br>
+#<br>
+#Chat script for GPRS connection<br>
+#with MTN GPRS<br>
+<br>
+TIMEOUT	10<br>
+ABORT	'BUSY'<br>
+ABORT	'NO ANSWER'<br>
+ABORT	'ERROR'<br>
+SAY	'Starting GPRS connection\n'<br>
+<br>
+#Get the modem's attention and reset it.<br>
+""	'ATZ'<br>
+<br>
+#Selection of the PDP contect. Choose which of the data connections to use. (CID)<br>
+#'' 'AT+CGDCONT=1,"IP","",,0,0'<br>
+<br>
+#Qos requirements: requested and minimum acceptable<br>
+#'' 'AT+CGQREQ=1,0,0,0,0,0'<br>
+#'' 'AT+CGQMIN=1,0,0,0,0,0'<br>
+<br>
+#EO=No echo, V1=English result codes<br>
+#OK	'ATEOV1' #Can cause problems<br>
+<br>
+#Set APN<br>
+SAY	'Setting APN\n'<br>
+#OK	'AT+CGDCONT=1,"IP","myMTN"'<br>
+<br>
+#Dial the number<br>
+ABORT	'NO CARRIER'<br>
+SAY	'Dialing CID 1 ... \n'<br>
+OK	'ATD*99***1#'<br>
+CONNECT	''<br>
+<br>
+<br>
+<br>
+#File: /etc/chatscripts/MTN_GPRS-disconnect<br>
+#<br>
+#Chatscript for disconnecting GPRS from MTN<br>
+""		"\K"<br>
+""		"+++ATHO"<br>
+SAY	"GPRS disconnected."<br>
+<br>
+If you are an MTN subscriber, get the phone setting over the air by sending the following network code. *123# Then follow the instructions. The service is free.<br>
+<br>
+Once set up, from command line, type "sudo pon T630" and away you go. I made a shortcut with the command, so I simply click it. However for the life of me a cannot get "poff" to work via shortcut!!!</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">debernardis</div><div class="date">February 22nd, 2006, 11:27 AM</div></div><div class="posttext">Hi, I was able to connect to GPRS (from Wind, an Italian mobile phone company) using info from your howto and from http://ubuntuforums.org/showthread.php?t=111455 , but...<br>
+<br>
+since I am quite a noob I am unable to switch from wifi (WLAN0) to ppp0 to test the new connection.<br>
+<br>
+I tried<br>
+$ sudo ifdown wlan0<br>
+$ sudo ifup ppp0<br>
+Ignoring unknown interface ppp0=ppp0<br>
+<br>
+So ppp0 has something bad even if <br>
+$ ifconfig ppp0<br>
+ppp0      Link encap:Point-to-Point Protocol<br>
+          inet addr:212.141.96.172  P-t-P:10.6.6.6  Mask:255.255.255.255<br>
+          UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1500  Metric:1<br>
+          RX packets:6 errors:1 dropped:0 overruns:0 frame:0<br>
+          TX packets:5 errors:0 dropped:0 overruns:0 carrier:0<br>
+          collisions:0 txqueuelen:3<br>
+          RX bytes:160 (160.0 b)  TX bytes:97 (97.0 b)<br>
+<br>
+Could you help me? Thanks<br>
+<br>
+EDIT<br>
+I did it. Started over, using KPPP for connection parameters. Added the proper GPRS initialization string AT+CGDCONT=1,"IP","internet.wind.biz" (cut .biz for home users) in modem config.<br>
+Also, since no authentication is needed for GPRS Wind connection, I edited /etc/ppp/peers/kppp-options , removing the comment sign from #noauth.<br>
+Deactivated wi-fi interface with sudo ifdown wlan0.<br>
+Then started KPPP, which connected flawlessly to GPRS.<br>
+After using GPRS I reactivated wlan with sudo ifup wlan0.<br>
+<br>
+Wind users in need of help are welcome asking my config.</div></div><hr>
+
+
+<div id="copyright">vBulletin® v3.8.4, Copyright ©2000-2011, Jelsoft Enterprises Ltd.</div>
+</div>
+
+</body></html>

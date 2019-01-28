@@ -1,0 +1,13 @@
+class test9 {
+	boolean a, b, c;
+	a = ( b && c ) || ( c == d );
+}
+
+
+
+
+
+
+
+
+
